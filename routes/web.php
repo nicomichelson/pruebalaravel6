@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('hola', function(){
+    return "Hola puerquilla";
+});
+
+Route::get('/saludo', 'Administrador\AdminController@index');
