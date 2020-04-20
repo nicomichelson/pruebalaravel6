@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', 'principal');
 
-Route::get('hola', function(){
-    return "Hola puerquilla";
-});
 
-Route::get('/saludo', 'Administrador\AdminController@index');
+
+Route::get('principal', 'Administrador\AdminController@index')->name('principal');
